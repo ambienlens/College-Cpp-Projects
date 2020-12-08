@@ -7,17 +7,16 @@ using namespace std;
 class DistAdd
 {
     private:
-        float km, ms, cm;
+        int km, ms, cm;
     public:
         DistAdd(){}
-        DistAdd(float k, float m, float c): km(k), ms(m), cm(c) {}
+        DistAdd(int k, int m, int c): km(k), ms(m), cm(c) {}
         DistAdd Addition(DistAdd dist)
         {
             DistAdd out;
-            out.km = km + dist.km;
-            out.ms = ms + dist.ms;
-            out.cm = cm + dist.cm;
-            return out;
+            out.cm = (cm + dist.km) % 100;
+            out.ms = ((ms + dist.ms) + (cm + dist.km) / 100) % 1000;
+            out.km = (km + out.km) + ((ms + dist.ms) + (cm + dist.km) / 100) / 1000;
         }
         void display()
         {
@@ -27,7 +26,7 @@ class DistAdd
 
 int main()
 {
-    float kms, mts, cms;
+    int kms, mts, cms;
 
     cout<<"Enter the km, ms & cm for Parameter 1: \n";
     cin>>kms>>mts>>cms;
