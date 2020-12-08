@@ -6,3 +6,8 @@
 a)Constructors,
 b)Passing object as an argument,
 c)Returning object from a fuction.***
+
+-  ***Write a program in C++ to add two duration (HH,MM,SS), using
+a)Constructors,
+b)Passing object as an argument,
+c)Returning object from a fuction.***

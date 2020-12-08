@@ -1,5 +1,5 @@
 //Debayan Majumder
-//To add two distances (km, m, cm)
+//To add two distances (KM, M, CM)
 
 #include <iostream>
 using namespace std;
@@ -20,7 +20,7 @@ class DistAdd
         }
         void display()
         {
-            cout<<"The distance: Km: "<<km<<", Ms: "<<ms<<", Cm: "<<cm<<endl;
+            cout<<"The distance Km: "<<km<<", Ms: "<<ms<<", Cm: "<<cm<<endl;
         }
 };
 
