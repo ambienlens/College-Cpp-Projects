@@ -1,3 +1,5 @@
+//Debayan Majumder
+//Calculation of the fare of passengers(childs + adults) accronding to distance.
 #include <iostream>
 using namespace std;
 
@@ -54,6 +56,7 @@ int main()
     
     travel user(name, a, c, d);
     user.AssignFare();
+    cout<<endl;
     user.ShowTravel();
     return 0;
 }
