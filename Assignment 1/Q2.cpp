@@ -72,7 +72,7 @@ int main()
     int i = 0;
 
     Banking *user = new Banking[100];
-    cout<<"---WELCOME TO BANKING SERVICES---";
+    cout<<"---WELCOME TO BANKING SERVICES---"<<endl;
 
     do
     {
