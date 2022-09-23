@@ -1,4 +1,4 @@
-//Debayan Manjumder
+//Debayan Majumder
 #include <iostream>
 using namespace std;
 
